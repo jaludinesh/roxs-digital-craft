@@ -34,10 +34,13 @@ const HeroSection: React.FC = () => {
             Rox <span className="text-orange">.</span>
           </h1>
           
-          <div className="relative h-20 mb-8 overflow-hidden animate-fade-in opacity-0" style={{animationDelay: '0.6s'}}>
-            <div className="absolute animate-slide-in opacity-0" style={{animationDelay: '0.8s'}}>
+          {/* Increased height to prevent text from being cut off and improved responsive handling */}
+          <div className="relative h-auto min-h-[5rem] mb-8 overflow-visible animate-fade-in opacity-0" style={{animationDelay: '0.6s'}}>
+            <div className="animate-slide-in opacity-0" style={{animationDelay: '0.8s'}}>
               <h2 className="text-xl md:text-2xl font-medium">
-                Website & Android App Developer <br className="md:hidden" /><span className="text-orange">|</span> WordPress Plugin Expert
+                Website & Android App Developer<br className="block sm:hidden" /> 
+                <span className="text-orange mx-2">|</span> 
+                WordPress Plugin Expert
               </h2>
             </div>
           </div>
