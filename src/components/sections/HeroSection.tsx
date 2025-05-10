@@ -64,19 +64,19 @@ const HeroSection: React.FC = () => {
             </Button>
           </div>
           
-          {/* Stats */}
-          <div className="flex gap-6 mt-12 animate-fade-in opacity-0" style={{animationDelay: '1.4s'}}>
-            <div>
+          {/* Stats section with improved visibility on white background */}
+          <div className="flex gap-6 mt-12 animate-fade-in opacity-0 relative z-20" style={{animationDelay: '1.4s'}}>
+            <div className="bg-navy/90 p-3 rounded-lg backdrop-blur-sm">
               <p className="text-3xl font-bold text-orange">50+</p>
-              <p className="text-sm text-white/60">Websites</p>
+              <p className="text-sm text-white">Websites</p>
             </div>
-            <div>
+            <div className="bg-navy/90 p-3 rounded-lg backdrop-blur-sm">
               <p className="text-3xl font-bold text-orange">30+</p>
-              <p className="text-sm text-white/60">Plugins</p>
+              <p className="text-sm text-white">Plugins</p>
             </div>
-            <div>
+            <div className="bg-navy/90 p-3 rounded-lg backdrop-blur-sm">
               <p className="text-3xl font-bold text-orange">10K+</p>
-              <p className="text-sm text-white/60">App Downloads</p>
+              <p className="text-sm text-white">App Downloads</p>
             </div>
           </div>
         </div>
