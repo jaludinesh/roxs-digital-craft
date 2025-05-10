@@ -34,10 +34,10 @@ const HeroSection: React.FC = () => {
             Rox <span className="text-orange">.</span>
           </h1>
           
-          <div className="relative h-12 mb-8 overflow-hidden animate-fade-in opacity-0" style={{animationDelay: '0.6s'}}>
+          <div className="relative h-20 mb-8 overflow-hidden animate-fade-in opacity-0" style={{animationDelay: '0.6s'}}>
             <div className="absolute animate-slide-in opacity-0" style={{animationDelay: '0.8s'}}>
               <h2 className="text-xl md:text-2xl font-medium">
-                Website & Android App Developer <span className="text-orange">|</span> WordPress Plugin Expert
+                Website & Android App Developer <br className="md:hidden" /><span className="text-orange">|</span> WordPress Plugin Expert
               </h2>
             </div>
           </div>
